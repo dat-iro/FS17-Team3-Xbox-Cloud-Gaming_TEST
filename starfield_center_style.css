@@ -1,3 +1,11 @@
+.description__section__header {
+  color: white;
+  font-size: 22px;
+  margin-left: 22.3rem;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
 .descrizione {
   display: flex;
   justify-content: center;
@@ -60,18 +68,25 @@
     border-radius: 5px;
 }
 
+.language__section__header {
+  color: white;
+  font-size: 22px;
+  margin-left: 22.5rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
 .lingue-supportate {
   display: flex;
   justify-content: center;
 }
 
 .containerLen {
-    height: 303px;
+    height: 313px;
     width: 70%;
     background-color: #2e3035;
     padding: 20px;
     border-radius: 5px;
-    margin-top: 50px;
     font-size: 13px;
   }
 
@@ -83,8 +98,17 @@
 
   .column-len {
     flex: 1;
-    padding: 10px;
+    padding: 5px;
   }
+
+.column-len__jap {
+  flex: 1;
+  padding: 5px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to top, #2e3035 20%, #ffffff 80%);
+}
 
   .menu {
     color: #7e7f82;
@@ -101,11 +125,23 @@
 
   }
 
+  .es {
+    border-bottom: solid 0.5px rgb(146, 143, 143);;
+  }
+
   .eng {
     border-bottom: solid 0.5px rgb(146, 143, 143);
   }
   .fr {
     border-bottom: solid 0.5px rgb(146, 143, 143);
+  }
+
+  .jap {
+    font-size: 13px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      background-clip: text;
+      background-image: linear-gradient(to top, #2e3035 20%, #ffffff 80%);
   }
 
 
@@ -120,6 +156,11 @@
 .check3{
   fill: white;
     margin-left: 200px;
+}
+
+.moreInfo {
+  color: white;
+  font-size: 16px;
 }
 
 .containerLen:hover{
