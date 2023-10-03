@@ -5,8 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style_starfield.css">
+    <link rel="stylesheet" href="starfield_top_style.css">
+    <script src="https://kit.fontawesome.com/0948e88429.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <nav>
+        <div id="logoCloud">
+            <a href="#" class="hover left" id="logo">
+                <img src="Resources/xbox.png" alt="xbox" id="logoImg">                       
+            </a>
+            <a href="#" class="hover left" id="cloudGamingBeta">CLOUD GAMING <img src="Resources/beta.png" alt=""></a>
+        </div>
+
+        <div id="searchUser">
+            <div>
+                <i class="fa-solid fa-magnifying-glass fa-flip-horizontal" style="color: rgb(211, 211, 211);"></i>
+                <input type="search" name="" placeholder="Cerca giochi" class="hover right" id="searchBar">
+            </div>
+            <a href="#" id="user" class="hover right">
+                <img src="Resources/user.png" alt="user" id="userImg">  
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="leftSide">    
+            <div id="starfield" class="whiteText">Starfield</div>
+            <div id="bethesda"><span class="largeSize">Bethesda Softworks ・ Di ruolo</span></div>
+            <div class="whiteText flex"><img id="xboxLogo" src="Resources/xbox.png" alt="xbox"> <span class="largeSize">GAME PASS</span> <img class="imageRight" src="Resources/gamepad.png" alt="gamepad"> Gioca con controller</div>
+            <div class="whiteText flex"><img src="Resources/web.png" alt="web"> 9 lingue supportate <img class="imageRight" src="Resources/omino.png" alt="omino"> 4 funzionalità di accessibilità</div>
+            <div id="logInButtonDiv">
+                <input type="button" value="ACCEDI" class="hover right" id="logInButton">
+                <a href="#"><img class="square" src="Resources/condividi.png" alt="condividi"></a>
+                <a href="#"><img class="square" src="Resources/acquista.png" alt=""></a>
+            </div>
+        </div>
+
+        <div id="rightSide">
+            <div id="pegiLogo"><img src="https://store-images.s-microsoft.com/image/global.26897.image.64890c63-4571-4629-89cc-ef467a5481a9.00df46ca-f579-40b3-abc8-9a83e9caad03" alt="pegiLogo" id="pegiImage"></div>
+            <div id="pegi18div"><a id="pegi18" href="#">PEGI 18 <img id="img1" src="Resources/pegi-link.png" alt="pegi-link"> <img id="img2" src="Resources/pegi-link-hover.png" alt=""></a></div>
+            <div class="greyText">Linguaggio osceno, Violenza</div>
+            <hr>
+            <div class="greyText">* potrebbero essere applicate tariffe per internet e provider di rete.<br> Cloud Gaming (Beta) richiede un abbonamento Xbox Game Pass Ultimate<br>(venduto separatamente). Disponibile in determinati paesi/aree<br>geografiche.<br>Contiene acquisti in-app.</div>
+        </div>
+    </main>
 </body>
 </html>
