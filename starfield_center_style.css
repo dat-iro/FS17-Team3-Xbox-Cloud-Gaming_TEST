@@ -1,18 +1,26 @@
+.descrizione {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
     display: flex;
     height: 234px;
+    width: 71.6%;
     background-color: #2e3035;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 5px;
 }
 
 .left {
     display: flex;
+    margin-left: -0.3rem;
 }
 
 .center {
     display: flex;
     padding-left: 10px;
-    width: 937px;
+    width: 40%;
+    margin-right: 5rem;
 }
 .center p{
     display: flex;
@@ -29,7 +37,6 @@
     color: white;
     display: flex;
     flex-direction: row;
-    margin-left: auto;
     white-space: nowrap;
     margin-top: 10px;
 }
@@ -48,19 +55,20 @@
  }
 
 .image{
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 5px;
 }
 
-
-
-
-
+.lingue-supportate {
+  display: flex;
+  justify-content: center;
+}
 
 .containerLen {
     height: 303px;
+    width: 70%;
     background-color: #2e3035;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 50px;
     font-size: 13px;
   }
