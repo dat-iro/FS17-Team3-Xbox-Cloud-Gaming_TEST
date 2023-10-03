@@ -1,0 +1,212 @@
+@media(max-width: 1000px){
+    #logInButton{
+    display: none;
+    }
+}
+@media (max-width: 750px){
+    #logInButton{
+    display: none;
+    }
+    #searchBar{
+        display: none;
+    }
+}
+*{
+    font-family: 'Bahnschrift', sans-serif;
+}
+body{
+    background-image: url(Resources/starfield.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2ch;
+    padding-bottom: 2ch;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.hover:hover{
+    background-color:grey;
+}
+#logInButton{
+    color: white;
+    background-color: #008746;
+    border-radius: 1ch;
+    padding: 1.75ch 16ch;
+    border: 0px;
+}
+#searchBar{
+    width: 38ch;
+    height: 5.5ch;
+    background-color: rgba(7, 7, 9, 0.5);
+    border-radius: 5ch;
+    border: 1px solid lightgray;
+    align-items: center;
+    position: relative;
+}
+i{
+    position: absolute;
+    margin-top: 1.2ch;
+    margin-left: 1.5ch;
+}
+#searchBar[placeholder]{
+    padding-left: 45px;
+    color: lightgray;
+}
+
+#logo{
+    border-radius: 100%;
+    height: 4ch;
+    width: 4ch;
+}
+#logoImg{
+    height: 4ch;
+    width: 4ch;
+}
+#cloudGamingBeta{
+    border-radius: 1ch;
+    margin-top: 1ch;
+    display: flex;
+    align-items: center;
+}
+.left{
+    margin-left: 5ch;
+}
+#user{
+    margin-right: 7ch;
+    border-radius: 100%;
+    background-color: rgb(72, 78, 88);
+    height: 5ch;
+    width: 5ch;
+}
+#user:hover{
+    border-radius: 100%;
+    background-color: rgb(91, 96, 105);
+}
+#userImg{
+    height: 5ch;
+    width: 5ch;
+}
+.right{
+    margin-right: 2ch;
+}
+svg{
+    width: 4ch;
+    height: 4ch;
+}
+.hover{
+    color: white;
+    text-decoration: none;
+}
+#logInButton:hover{
+    background-color: #04b358;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+}
+#bethesda{
+    color: rgb(166, 176, 178);
+    margin-bottom: 1ch;
+}
+#rightSide{
+    font-size: small;
+    width: 33vw;
+    height: 30vh;
+    float: right;
+    margin-right: 15vw;
+    margin-top: 40vh;
+}
+.greyText{
+    margin-top: 1ch;
+    color: rgb(166, 176, 178);
+}
+#pegiLogo{
+    width: 3rem;
+    height: 100%;
+    float: left;
+    margin-right: 2ch;
+}
+#pegiImage{
+    width: 100%;
+    height: auto;
+}
+.largeSize{
+    font-size: large;
+}
+#pegi18{
+    font-size: 15px;
+    padding: 0.5ch 2ch 0.5ch 2ch;
+    text-decoration: none;
+    color: rgb(175, 162, 232);
+    background-color: rgb(45, 48, 54);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 18%;
+    justify-content: center;
+}
+#pegi18:hover{
+    color: rgb(168, 207, 150);
+    background-color: rgb(81, 88, 99);
+}
+#pegi18 img#img1{
+    margin-left: 1ch;
+}
+#pegi18 img#img2 {
+    display: none;
+    margin-left: 1ch;
+}
+#pegi18:hover img#img2 {
+    display: inline;
+}  
+#pegi18:hover img#img1 {
+    display: none;
+}  
+#leftSide{
+    width: 40vw;
+    margin-top: 10ch;
+    margin-left: 1ch;
+}
+#starfield{
+    color: white;
+    font-size:xx-large;
+    margin-top: 1rem;
+}
+#logInButtonDiv{
+    margin-top: 3rem;
+    display: flex;
+}
+.whiteText{
+    color: white;
+}
+#xboxLogo{
+    height: 3ch;
+    width: auto;
+}
+.imageRight{
+    margin-left: 2ch;
+}
+.square{
+    background-color: rgb(72, 78, 88);
+    border-radius: 5px;
+    padding: 1ch;
+    margin-right: 1.5ch;
+}
+.square:hover{
+    background-color: rgb(107, 117, 132)
+}
+#searchUser{
+    display: flex;
+}
+#logoCloud{
+    display: flex;
+    margin-top: 1ch;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
