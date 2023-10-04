@@ -1,0 +1,210 @@
+.cloud-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: 23rem;
+    margin-left: 15%;
+    margin-top: 2rem;
+}
+
+.cloud-section__card-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    /* overflow-x: scroll;
+    white-space: nowrap; */
+}
+
+.card__vertical {
+    display: flex;
+    position: relative;
+}
+
+.card__horizontal {
+    display: flex;
+    position: relative;
+}
+
+.pad__black-box {
+    position: absolute;
+    width: 2.4rem;
+    height: 2.1rem;
+    bottom: 0;
+    left: 10.93rem;
+    background-color: black;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    opacity: 60%;
+}
+
+.pad__black-box__horizontal {
+    position: absolute;
+    width: 2.4rem;
+    height: 2.1rem;
+    bottom: 0;
+    left: 17.6rem;
+    background-color: black;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    opacity: 60%;
+}
+
+.gamepass-icon {
+    transform: scale(0.15);
+    position: absolute;
+    bottom: -2rem;
+    left: -5rem;
+}
+
+.gamepass-icon__horizontal {
+    transform: scale(0.15);
+    position: absolute;
+    bottom: -2rem;
+    left: -5rem;
+}
+
+.pad-icon {
+    position: absolute;
+    bottom: 0.4rem;
+    left: 11.6rem;
+}
+
+.pad-icon__horizontal {
+    position: absolute;
+    bottom: 0.4rem;
+    left: 18.3rem;
+}
+
+.card__popup-bar {
+    display: none;
+    background-color: black;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    min-height: 2rem;
+    max-height: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    bottom: 0;
+}
+
+.popup-bar__name {
+    display: none;
+    color: white;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: 500px;
+    margin-left: 15%;
+    margin-top: 2rem;
+    background: rgb(19,60,42);
+    background: linear-gradient(180deg, rgba(19,60,42,1) 60%, rgba(26,27,30,1) 100%);
+}
+
+.game-pass__logo__container {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    margin-bottom: auto;
+    padding-bottom: 4rem;
+}
+
+.news-section__card-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    /* overflow-x: scroll;
+    white-space: nowrap; */
+}
+
+.expiring-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: 230px;
+    margin-left: 15%;
+    margin-top: 2rem;
+}
+
+.expiring-section__card-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.section-title {
+    margin-left: 3rem;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card__vertical__poster {
+    height: 20rem;
+    border-radius: 5px;
+}
+
+.card__horizontal__poster {
+    width: 20rem;
+    border-radius: 5px;
+}
+
+.card__vertical:hover {
+    cursor: pointer;
+}
+
+.card__horizontal:hover {
+    cursor: pointer;
+}
+
+.card__vertical:hover .pad__black-box {
+    display: none;
+}
+
+.card__horizontal:hover .pad__black-box__horizontal {
+    display: none;
+}
+
+.card__vertical:hover .icons__container {
+    display: none;
+}
+
+.card__horizontal:hover .icons__container {
+    display: none;
+}
+
+.card__vertical:hover .card__popup-bar {
+    display: block;
+    opacity: 70%;
+}
+
+.card__horizontal:hover .card__popup-bar {
+    display: block;
+    opacity: 70%;
+}
+
+.card__vertical:hover .popup-bar__name {
+    display: block;
+}
+
+.card__horizontal:hover .popup-bar__name {
+    display: block;
+}
