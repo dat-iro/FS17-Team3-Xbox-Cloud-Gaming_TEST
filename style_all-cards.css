@@ -91,6 +91,11 @@
     padding-right: 5rem;
 }
 
+.visualize__all-games__button:hover {
+    background-color: #515863;
+    cursor: pointer;
+}
+
 .square-card:hover {
     cursor: pointer;
 }
