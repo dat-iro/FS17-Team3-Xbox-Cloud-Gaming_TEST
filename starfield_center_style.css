@@ -104,10 +104,7 @@
 .column-len__jap {
   flex: 1;
   padding: 5px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-image: linear-gradient(to top, #2e3035 20%, #ffffff 80%);
+  opacity: 0.4;
 }
 
   .menu {
