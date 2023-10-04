@@ -15,8 +15,8 @@
     margin-left: 3rem;
     margin-bottom: 1rem;
     gap: 1rem;
-    /* overflow-x: scroll;
-    white-space: nowrap; */
+
+    overflow-x: auto;
 }
 
 .card__vertical {
@@ -127,8 +127,8 @@
     margin-left: 3rem;
     margin-bottom: 1rem;
     gap: 1rem;
-    /* overflow-x: scroll;
-    white-space: nowrap; */
+
+    overflow-x: auto;
 }
 
 .expiring-section {

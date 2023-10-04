@@ -2,10 +2,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 70%;
+    width: 75%;
     height: 40rem;
     margin-left: 15%;
-    margin-top: 2rem;
+    margin-top: -1rem;
 }
 
 .section-title {
@@ -77,6 +77,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 7rem;
 }
 
 .visualize__all-games__button {

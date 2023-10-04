@@ -1,16 +1,16 @@
-*{
-    box-sizing: border-box;
+.generi__section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 68.5%;
+    height: 23rem;
+    margin-left: 16.8%;
+    margin-top: -5rem;
 }
 
-body{
-    background-color: #1A1B1E;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-}
 .title{
     display: block;
     color: #FFFF;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     font-weight: 400;
     height: 24px;
@@ -21,10 +21,9 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 20px;
     height: 96px;
     width: 100%;
-    gap: 10px;
     position: relative;
     min-width: 124px;
     align-items: unset;
@@ -104,10 +103,11 @@ body{
     width: 40px;
     fill: rgb(210, 210, 210);
 }
+
 .container .indie{
     background-color: #1A9359;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container .indie:hover{
@@ -116,7 +116,7 @@ body{
 .container .intuitivo{
     background-color: #1A9359;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 50px;
 }
 .container .intuitivo:hover{
     background-color: #3a9a6c;
@@ -124,7 +124,7 @@ body{
 .container .sparatutto{
     background-color: #1A9359;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 50px;
 }
 .container .sparatutto:hover{
     background-color: #3a9a6c;
@@ -132,7 +132,7 @@ body{
 .container .action{
     background-color: #1A9180;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 50px;
 }
 .container .action:hover{
     background-color: #329889;
@@ -140,7 +140,7 @@ body{
 .container .brawler{
     background-color: #1A9180;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 50px;
 }
 .container .brawler:hover{
     background-color: #329889;
@@ -148,7 +148,7 @@ body{
 .container .strategy{
     background-color: #1A9180;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 50px;
 }
 .container .strategy:hover{
     background-color: #329889;
@@ -156,7 +156,7 @@ body{
 .container .simulator{
     background-color: #1A899A;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 50px;
 }
 .container .simulator:hover{
     background-color: #3d919e;
@@ -165,7 +165,7 @@ body{
 .container .rpg{
     background-color: #1A899A;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 50px;
 }
 .container .rpg:hover{
     background-color: #3d919e;
