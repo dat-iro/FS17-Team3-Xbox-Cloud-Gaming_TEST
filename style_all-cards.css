@@ -73,6 +73,24 @@
     margin-bottom: 0.5rem;
 }
 
+.visualize__all-games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visualize__all-games__button {
+    color: white;
+    font-weight: bolder;
+    border: 1px solid #2D3036;
+    background-color: #2D3036;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
 .square-card:hover {
     cursor: pointer;
 }
