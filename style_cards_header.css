@@ -5,7 +5,7 @@ header {
     background-size: 70%;
     background-position: center;
     opacity: 80%;
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 .header-container {
@@ -15,7 +15,7 @@ header {
     width: 70%;
     height: 37rem;
     margin-left: 15%;
-    margin-top: 2rem;
+    margin-top: -4rem;
 }
 
 #navHeader ul {
