@@ -1,12 +1,1222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Xbox Cloud Gaming (beta) su Xbox.com</title>
     <link rel="stylesheet" href="style_home.css">
+    <link rel="stylesheet" href="style_cards_header.css">
+    <link rel="stylesheet" href="cards_style.css">
+    <link rel="stylesheet" href="style_generi_home.css">
+    <link rel="stylesheet" href="style_all-cards.css">
+    <link rel="stylesheet" href="style_home_footer.css">
 </head>
+
 <body>
+    <header>
+        <div class="header-container">
+            <section id="navHeader">
+                <ul>
+                    <li>
+                        <img title="navHeader__cloud-img" src="icons/cloud-gaming-img.png" alt="cloud-gaming" width="40"
+                            height="40">
+                    </li>
+                    <li>
+                        <img title="navHeader__cloud-write" src="icons/cloudgaming-beta.png" alt="cloud-gaming" width="170"
+                            height="40">
+                    </li>
+
+                    <li>
+                        <button type="button" id="navHeader__button">ACCEDI</button>
+                    </li>
+
+                    <li>
+                        <input type="search" id="navHeader__search" placeholder="Cerca giochi">
+                    </li>
+
+                    <li>
+                        <div id="navHeader__avatar">
+                            <img src="icons/user-home.png" alt="Insert your photo" class="profileImg" width="100"
+                                height="100">
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+
+            <div class="scrollBar__cardsHeader">
+                <section id="cardsHeader">
+                    <div class="cardsHeader__games">
+                        <img src="images/img1.jpeg" alt="cover card Goldeneye 007" class="cardsHeader__games__covergame"
+                            title="GoldenEye-007" width="806" height="454">
+                        <img src="icons/gamepass.png" class="cardsHeader__games__gamepass" alt="gamepass-logo" width="28"
+                            height="24">
+                        <img src="icons/controller.png" class="cardsHeader__games__controller" alt="controller-image"
+                            width="30" height="30">
+                        <p class="cardsHeader__games__nameGame">GoldenEye 007</p>
+                        <p class="cardsHeader__games__description">Gioca all'iconico sparatutto stealth, proprio come lo
+                            ricordi</p>
+                    </div>
+
+                    <div class="cardsHeader__games">
+                        <img src="images/img2.jpeg" alt="cover card Exoprimal" class="cardsHeader__games__covergame"
+                            title="Exoprimal" width="806" height="454">
+                        <img src="icons/gamepass.png" class="cardsHeader__games__gamepass" alt="gamepass-logo" width="28"
+                            height="24">
+                        <img src="icons/controller.png" class="cardsHeader__games__controller" alt="controller-image"
+                            width="30" height="30">
+                        <p class="cardsHeader__games__nameGame">Exoprimal</p>
+                        <p class="cardsHeader__games__description">Vestiti. Adattati. Sopravvivi.</p>
+                    </div>
+
+                    <div class="cardsHeader__games">
+                        <img src="images/img3.jpeg" alt="cover card Fortnite" class="cardsHeader__games__covergame"
+                            title="Fortnite" width="806" height="454">
+                        <img src="icons/gamepass.png" class="cardsHeader__games__gamepass" alt="gamepass-logo" width="28"
+                            height="24">
+                        <img src="icons/controller.png" class="cardsHeader__games__controller" alt="controller-image"
+                            width="30" height="30">
+                        <p class="cardsHeader__games__nameGame">Fortnite</p>
+                        <p class="cardsHeader__games__description">Gioca gratis a Fortnite con Cloud Gaming</p>
+                    </div>
+
+                    <div class="cardsHeader__games">
+                        <img src="images/img4.jpeg" alt="cover card Gang Beasts" class="cardsHeader__games__covergame"
+                            title="Gang-Beasts" width="806" height="454">
+                        <img src="icons/gamepass.png" class="cardsHeader__games__gamepass" alt="gamepass-logo" width="28"
+                            height="24">
+                        <img src="icons/controller.png" class="cardsHeader__games__controller" alt="controller-image"
+                            width="30" height="30">
+                        <p class="cardsHeader__games__nameGame">Gang Beasts</p>
+                        <p class="cardsHeader__games__description">Benvenuto a Beef City</p>
+                    </div>
+
+                    <div class="cardsHeader__games">
+                        <img src="images/img5.jpeg" alt="cover card DEATHLOOP" class="cardsHeader__games__covergame"
+                            title="DEATHLOOP" width="806" height="454">
+                        <img src="icons/gamepass.png" class="cardsHeader__games__gamepass" alt="gamepass-logo" width="28"
+                            height="24">
+                        <img src="icons/controller.png" class="cardsHeader__games__controller" alt="controller-image"
+                            width="30" height="30">
+                        <p class="cardsHeader__games__nameGame">DEATHLOOP</p>
+                        <p class="cardsHeader__games__description">Due assassini rivali, un loop temporale mortale</p>
+                    </div>
+
+                    <div class="cardsHeader__games">
+                        <img src="images/img6.jpeg" alt="cover card Valheim" class="cardsHeader__games__covergame"
+                            title="Valheim" width="806" height="454">
+                        <img src="icons/gamepass.png" class="cardsHeader__games__gamepass" alt="gamepass-logo" width="28"
+                            height="24">
+                        <img src="icons/controller.png" class="cardsHeader__games__controller" alt="controller-image"
+                            width="30" height="30">
+                        <p class="cardsHeader__games__nameGame">Valheim</p>
+                        <p class="cardsHeader__games__description"> Mettiti alla prova di fronte a Odino</p>
+                    </div>
+
+                    <div class="cardsHeader__games">
+                        <img src="images/img7.jpeg" alt="cover card Plants vs. Zombies Garden Warfare"
+                            class="cardsHeader__games__covergame" title="Plants-vs-Zombies" width="806" height="454">
+                        <img src="icons/gamepass.png" class="cardsHeader__games__gamepass" alt="gamepass-logo" width="28"
+                            height="24">
+                        <img src="icons/controller.png" class="cardsHeader__games__controller" alt="controller-image"
+                            width="30" height="30">
+                        <p class="cardsHeader__games__nameGame">Plants vs. Zombies Garden Warfare</p>
+                        <p class="cardsHeader__games__description">La battaglia decisiva per i cervelli</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+
+    <!-- "Più diffusi sul cloud" -->
+
+    <section class="cloud-section">
+        <h2 class="section-title">Più diffusi sul cloud</h2>
+
+        <div class="scrollbar__cards">
+            <div class="cloud-section__card-container">
+                <div class="card__vertical">
+                    <img src="assets/fortnite-img.jpg" class="card__vertical__poster">
+
+                    <div class="pad__black-box"></div>
+
+                    <div class="icons__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                        <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                    </div>
+
+                    <div class="card__popup-bar">
+                        <div class="popup-bar__name">Fortnite</div>
+                    </div>
+                </div>
+
+                <div class="card__vertical">
+                    <img src="assets/starfield-img.jpg" class="card__vertical__poster">
+
+                    <div class="pad__black-box"></div>
+
+                    <div class="icons__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                        <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                        <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                    </div>
+
+                    <div class="card__popup-bar">
+                        <div class="popup-bar__name">Starfield</div>
+                    </div>
+                </div>
+
+                <div class="card__vertical">
+                    <img src="assets/gtav-img.jpg" class="card__vertical__poster">
+
+                    <div class="pad__black-box"></div>
+
+                    <div class="icons__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                        <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                        <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                    </div>
+
+                    <div class="card__popup-bar">
+                        <div class="popup-bar__name">Grand Theft Auto V (Xbox One)</div>
+                    </div>
+                </div>
+
+                <div class="card__vertical">
+                    <img src="assets/r6-img.jpg" class="card__vertical__poster">
+
+                    <div class="pad__black-box"></div>
+
+                    <div class="icons__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                        <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                        <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                    </div>
+
+                    <div class="card__popup-bar">
+                        <div class="popup-bar__name">Tom Clancy's Rainbow Six® Siege Deluxe Edition</div>
+                    </div>
+                </div>
+
+                <div class="card__vertical">
+                    <img src="assets/forza5-img.jpg" class="card__vertical__poster">
+
+                    <div class="pad__black-box"></div>
+
+                    <div class="icons__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                        <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                        <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                    </div>
+
+                    <div class="card__popup-bar">
+                        <div class="popup-bar__name">Forza horizon 5 Edizione standard</div>
+                    </div>
+                </div>
+
+                <div class="card__vertical">
+                    <img src="assets/fifa23-img.jpg" class="card__vertical__poster">
+
+                    <div class="pad__black-box"></div>
+
+                    <div class="icons__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                        <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                        <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                    </div>
+
+                    <div class="card__popup-bar">
+                        <div class="popup-bar__name">EA SPORTS™ FIFA 23 Standard Edition per Xbox Series X|S</div>
+                    </div>
+                </div>
+
+                <div class="card__vertical">
+                    <img src="assets/gtav2-img.jpg" class="card__vertical__poster">
+
+                    <div class="pad__black-box"></div>
+
+                    <div class="icons__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                        <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                        <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                    </div>
+
+                    <div class="card__popup-bar">
+                        <div class="popup-bar__name">Grand Theft Auto V (Xbox Series X|S)</div>
+                    </div>
+                </div>
+
+                <div class="card__vertical">
+                    <img src="assets/sot-img.jpg" class="card__vertical__poster">
+
+                    <div class="pad__black-box"></div>
+
+                    <div class="icons__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                        <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                        <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                    </div>
+
+                    <div class="card__popup-bar">
+                        <div class="popup-bar__name">Sea of Thieves 2023 Edition</div>
+                    </div>
+                </div>
+
+                <div class="card__vertical">
+                    <img src="assets/mk11-img.jpg" class="card__vertical__poster">
+
+                    <div class="pad__black-box"></div>
+
+                    <div class="icons__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                        <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                        <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                    </div>
+
+                    <div class="card__popup-bar">
+                        <div class="popup-bar__name">Mortal Kombat 11</div>
+                    </div>
+                </div>
+
+                <div class="card__vertical">
+                    <img src="assets/haloinfinite-img.jpg" class="card__vertical__poster">
+
+                    <div class="pad__black-box"></div>
+
+                    <div class="icons__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                        <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                        <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                    </div>
+
+                    <div class="card__popup-bar">
+                        <div class="popup-bar__name">Halo Infinite (Campagna)</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- "Aggiunto di recente" -->
+
+    <section class="news-section">
+        <div class="game-pass__logo__container">
+            <svg class="game-pass__logo" 
+                width="150px" height="150px" viewBox="0 0 2112 360" version="1.1" 
+                xmlns="http://www.w3.org/2000/svg"><title>Game Pass</title><g stroke="none" stroke-width="1" fill-rule="evenodd">
+                <path fill="#FFFFFF" d="M1595.95,206.009 L1633.358,106.949 L1670.766,206.009 L1595.95,206.009 Z M1652.054,74.506 L1614.664,74.506 L1530.181,290.878 L1564.499,290.878 L1585.406,234.822 L1681.31,234.822 L1702.218,290.878 L1736.535,290.878 L1652.054,74.506 Z M2111.656,230.869 C2111.656,250.876 2104.122,266.864 2089.263,278.388 C2074.429,289.892 2053.617,295.725 2027.408,295.725 C1998.983,295.725 1976.539,289.177 1960.698,276.262 C1944.839,263.332 1936.695,244.187 1936.493,219.358 L1936.49,219.037 L1969.543,219.037 L1969.549,219.349 C1969.848,235.337 1974.907,247.489 1984.584,255.47 C1994.276,263.464 2008.888,267.518 2028.013,267.518 C2043.829,267.518 2056.153,264.429 2064.643,258.336 C2073.1,252.267 2077.388,243.331 2077.388,231.778 C2077.388,222.436 2073.864,215.13 2066.914,210.067 C2059.913,204.966 2047.107,200.345 2028.854,196.334 L2010.374,192.395 C1988.206,187.961 1971.232,180.597 1959.93,170.505 C1948.6,160.389 1942.856,146.241 1942.856,128.455 C1942.856,110.658 1949.83,96.25 1963.584,85.632 C1977.312,75.032 1996.136,69.658 2019.53,69.658 C2047.756,69.658 2069.284,75.8 2083.517,87.914 C2097.763,100.039 2105.192,116.939 2105.596,138.145 L2105.602,138.468 L2072.866,138.468 L2072.845,138.174 C2071.846,124.393 2067.247,114.12 2059.176,107.643 C2051.091,101.155 2037.853,97.866 2019.833,97.866 C2005.825,97.866 1994.978,100.497 1987.594,105.686 C1980.244,110.851 1976.517,118.308 1976.517,127.849 C1976.517,137.596 1979.84,145.054 1986.391,150.018 C1992.995,155.421 2005.387,160.089 2023.232,163.899 L2042.016,167.838 C2066.602,173.077 2084.544,180.748 2095.343,190.639 C2106.168,200.553 2111.656,214.088 2111.656,230.869 L2111.656,230.869 Z M1919.193,230.869 C1919.193,250.876 1911.659,266.864 1896.8,278.388 C1881.965,289.892 1861.154,295.725 1834.945,295.725 C1806.52,295.725 1784.076,289.177 1768.235,276.262 C1752.376,263.332 1744.232,244.187 1744.03,219.358 L1744.027,219.037 L1777.08,219.037 L1777.086,219.349 C1777.386,235.337 1782.444,247.489 1792.12,255.47 C1801.813,263.464 1816.426,267.518 1835.551,267.518 C1851.366,267.518 1863.69,264.429 1872.18,258.336 C1880.637,252.267 1884.926,243.331 1884.926,231.778 C1884.926,222.436 1881.401,215.13 1874.451,210.067 C1867.449,204.966 1854.644,200.345 1836.391,196.334 L1817.911,192.395 C1795.742,187.961 1778.769,180.597 1767.467,170.505 C1756.137,160.389 1750.392,146.241 1750.392,128.455 C1750.392,110.658 1757.367,96.25 1771.12,85.632 C1784.849,75.032 1803.672,69.658 1827.066,69.658 C1855.293,69.658 1876.82,75.8 1891.054,87.914 C1905.301,100.039 1912.729,116.939 1913.134,138.145 L1913.139,138.468 L1880.402,138.468 L1880.382,138.174 C1879.383,124.393 1874.784,114.12 1866.713,107.643 C1858.628,101.155 1845.39,97.866 1827.37,97.866 C1813.362,97.866 1802.515,100.497 1795.131,105.686 C1787.781,110.851 1784.054,118.308 1784.054,127.849 C1784.054,137.596 1787.377,145.054 1793.928,150.018 C1800.532,155.421 1812.924,160.089 1830.768,163.899 L1849.554,167.838 C1874.139,173.077 1892.081,180.748 1902.88,190.639 C1913.705,200.553 1919.193,214.088 1919.193,230.869 L1919.193,230.869 Z M1419.893,103.622 L1478.359,103.622 C1491.744,103.622 1502.068,107.058 1509.044,113.835 C1516.017,120.609 1519.553,130.421 1519.553,142.998 C1519.553,155.575 1516.017,165.336 1509.046,172.009 C1502.069,178.686 1491.745,182.072 1478.359,182.072 L1419.893,182.072 L1419.893,103.622 Z M1533.723,92.924 C1520.795,80.702 1502.371,74.506 1478.965,74.506 L1386.838,74.506 L1386.838,290.878 L1419.893,290.878 L1419.893,211.188 L1478.965,211.188 C1502.371,211.188 1520.794,204.991 1533.723,192.771 C1546.657,180.544 1553.215,163.799 1553.215,142.998 C1553.215,121.998 1546.657,105.151 1533.723,92.924 L1533.723,92.924 Z M1116.699,74.506 L1116.699,290.878 L1084.855,290.878 L1084.855,119.18 C1080.762,131.23 1075.276,146.17 1068.501,163.717 L1019.639,290.878 L991.934,290.878 L991.856,290.676 L942.467,163.717 C936.589,148.045 931.205,133.31 926.414,119.796 L926.414,290.878 L894.57,290.878 L894.57,74.506 L939.95,74.506 L984.266,189.547 C993.152,212.849 1000.492,233.035 1006.088,249.568 C1012.648,229.918 1020.091,208.711 1028.214,186.522 L1071.016,74.506 L1116.699,74.506 Z M1182.809,104.228 L1182.809,166.922 L1290.293,166.922 L1290.293,194.523 L1182.809,194.523 L1182.809,261.155 L1304.313,261.155 L1304.313,290.878 L1149.754,290.878 L1149.754,74.506 L1304.313,74.506 L1304.313,104.228 L1182.809,104.228 Z M653.621,176.921 L653.621,216.675 L653.621,290.873 L653.621,290.877 L622.528,290.873 L622.528,262.553 C614.529,273.464 604.646,281.782 593.143,287.286 C581.439,292.886 567.733,295.725 552.405,295.725 C536.881,295.725 522.746,293.092 510.392,287.899 C498.033,282.702 487.112,274.8 477.931,264.409 C468.556,254.127 461.424,242.035 456.735,228.473 C452.049,214.918 449.673,199.516 449.673,182.692 C449.673,165.667 452.075,150.136 456.811,136.531 C461.551,122.918 468.761,110.851 478.24,100.665 C487.619,90.379 498.77,82.553 511.38,77.408 C523.984,72.266 538.399,69.658 554.222,69.658 C580.635,69.658 602.823,76.613 620.171,90.331 C637.327,104.258 647.764,122.98 651.194,145.982 L651.248,146.346 L617.292,146.346 L617.24,146.093 C614.24,131.696 606.992,120.138 595.696,111.741 C584.393,103.338 570.541,99.078 554.526,99.078 C533.111,99.078 515.862,106.685 503.259,121.689 C490.439,136.512 483.941,157.035 483.941,182.692 C483.941,208.349 490.439,228.871 503.256,243.691 C516.261,258.697 533.715,266.306 555.132,266.306 C573.749,266.306 589.682,260.421 602.49,248.814 C615.213,237.483 622.003,222.785 622.675,205.128 L559.056,205.128 L559.056,176.921 L653.621,176.921 Z M736.688,206.009 L774.096,106.949 L811.504,206.009 L736.688,206.009 Z M792.791,74.506 L755.401,74.506 L670.919,290.878 L705.237,290.878 L726.144,234.822 L822.048,234.822 L842.955,290.878 L877.273,290.878 L792.791,74.506 Z M229.425,98.903 C229.251,99.052 229.114,99.243 229.114,99.5 C229.114,99.703 229.233,99.87 229.358,100.019 C265.592,143.142 335.744,245.991 322.026,288.412 C321.906,288.758 321.925,289.158 322.235,289.337 C322.557,289.529 322.97,289.337 323.194,289.05 C346.282,258.783 360,221.004 360,179.999 C360,130.049 339.643,84.864 306.795,52.258 C306.557,52.021 306.296,51.802 305.998,51.649 C302.972,50.09 284.329,44.286 229.425,98.903 L229.425,98.903 Z M54.001,51.649 C53.703,51.802 53.443,52.021 53.204,52.258 C20.356,84.864 0,130.049 0,179.999 C0,221.004 13.718,258.783 36.806,289.05 C37.03,289.337 37.442,289.529 37.765,289.337 C38.075,289.158 38.093,288.758 37.973,288.412 C24.256,245.991 94.408,143.142 130.641,100.019 C130.766,99.87 130.886,99.703 130.886,99.5 C130.886,99.243 130.749,99.052 130.575,98.903 C75.671,44.286 57.028,50.09 54.001,51.649 L54.001,51.649 Z M273.769,26.338 C246.198,9.956 216.325,0 180,0 C143.674,0 113.801,9.956 86.231,26.338 C85.908,26.523 85.777,26.899 85.932,27.23 C86.081,27.559 86.446,27.625 86.804,27.541 C121.658,20.013 174.601,50.11 179.62,53.132 C179.734,53.197 179.847,53.269 180,53.269 C180.152,53.269 180.265,53.197 180.379,53.132 C185.399,50.11 238.342,20.013 273.195,27.541 C273.554,27.625 273.918,27.559 274.067,27.23 C274.222,26.899 274.091,26.523 273.769,26.338 L273.769,26.338 Z M180,144.363 C180.2,144.363 180.45,144.536 180.588,144.655 C234.418,185.601 326.593,286.889 298.488,315.495 C266.827,343.206 225.38,360 180,360 C134.62,360 93.173,343.206 61.512,315.495 C33.407,286.889 125.573,185.601 179.403,144.655 C179.546,144.536 179.797,144.363 180,144.363 L180,144.363 Z"></path></g></svg>
+        </div>
+
+        <h2 class="section-title">Aggiunto di recente</h2>
+
+        <div class="news-section__card-container">
+            <div class="card__vertical">
+                <img src="assets/lamp-img.jpg" class="card__vertical__poster">
+
+                <div class="pad__black-box"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                    <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">The Lamplighters League</div>
+                </div>
+            </div>
+
+            <div class="card__vertical">
+                <img src="assets/gknights-img.jpg" class="card__vertical__poster">
+
+                <div class="pad__black-box"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                    <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Gotham Knights</div>
+                </div>
+            </div>
+
+            <div class="card__vertical">
+                <img src="assets/cocoon-img.jpg" class="card__vertical__poster">
+
+                <div class="pad__black-box"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                    <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Cocoon</div>
+                </div>
+            </div>
+
+            <div class="card__vertical">
+                <img src="assets/aceattorney-img.jpg" class="card__vertical__poster">
+
+                <div class="pad__black-box"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                    <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Phoenix Wright: Ace Attorney Trilogy</div>
+                </div>
+            </div>
+
+            <div class="card__vertical">
+                <img src="assets/payday3-img.jpg" class="card__vertical__poster">
+
+                <div class="pad__black-box"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                    <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">PAYDAY 3</div>
+                </div>
+            </div>
+
+            <div class="card__vertical">
+                <img src="assets/partyanimals-img.jpg" class="card__vertical__poster">
+
+                <div class="pad__black-box"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                    <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Party Animals</div>
+                </div>
+            </div>
+
+            <div class="card__vertical">
+                <img src="assets/liesofp-img.jpg" class="card__vertical__poster">
+
+                <div class="pad__black-box"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                    <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Lies of P</div>
+                </div>
+            </div>
+
+            <div class="card__vertical">
+                <img src="assets/solarash-img.jpg" class="card__vertical__poster">
+
+                <div class="pad__black-box"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                    <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Solar Ash</div>
+                </div>
+            </div>
+
+            <div class="card__vertical">
+                <img src="assets/spiritfarer-img.jpg" class="card__vertical__poster">
+
+                <div class="pad__black-box"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                    <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Spiritfarer: Edizione Farewell</div>
+                </div>
+            </div>
+
+            <div class="card__vertical">
+                <img src="assets/starfield-img.jpg" class="card__vertical__poster">
+
+                <div class="pad__black-box"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon" role="img">
+                    <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Starfield</div>
+                </div>
+            </div>
+
+        </div>    
+    </section>
+
+    <!-- "Presto non disponibile" -->
     
+    <section class="expiring-section">
+        <h2 class="section-title">Presto non disponibile</h2>
+
+        <div class="expiring-section__card-container">
+            <div class="card__horizontal">
+                <img src="assets/turnipboy-img.jpg" class="card__horizontal__poster">
+
+                <div class="pad__black-box__horizontal"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon__horizontal" role="img">
+                    <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__horizontal">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Turnip Boy Commits Tax Evasion</div>
+                </div>  
+            </div>
+
+            <div class="card__horizontal">
+                <img src="assets/tianding-img.jpg" class="card__horizontal__poster">
+
+                <div class="pad__black-box__horizontal"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon__horizontal" role="img">
+                    <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__horizontal">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">The Legend of Tianding</div>
+                </div>  
+            </div>
+
+            <div class="card__horizontal">
+                <img src="assets/trektoyomi-img.jpg" class="card__horizontal__poster">
+
+                <div class="pad__black-box__horizontal"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon__horizontal" role="img">
+                    <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__horizontal">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Trek to Yomi</div>
+                </div>  
+            </div>
+
+            <div class="card__horizontal">
+                <img src="assets/eville-img.jpg" class="card__horizontal__poster">
+
+                <div class="pad__black-box__horizontal"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="374 410 1300 1242" width="200px" height="100px" class="gamepass-icon__horizontal" role="img">
+                    <path fill="#FFFFFF" d="M0 384h2048v1280H0V384zm684 160L536 974h146l20-78h120l19 78h146L848 544H684zM88 766q0 113 59 164t169 51q10 0 35-3t52-8 50-11 28-14V711H266v104h81v53q-8 1-14 1t-15 1q-50 0-72-31t-23-77q0-53 28-83t83-31q34 0 60 7t58 18V553h-3q-31-5-59-10t-60-6q-33 0-65 6t-60 18-53 33-41 51q-16 27-19 58t-4 63zm491 450q0-42-13-70t-37-44-56-22-70-7H226v430h135v-136h35q35 0 68-9t58-27 41-47 16-68zm320 288h147l-140-430H743l-148 430h146l20-77h119l19 77zm529-131q0-33-13-55t-32-39-42-26-42-19-32-18-13-21q0-16 15-20t28-5q26 0 57 8t52 24v-118h-3q-31-5-58-11t-60-6q-33 0-64 8t-56 24-40 43-15 64q0 35 12 57t31 38 41 25 40 18 31 17 13 23q0 16-14 20t-26 5q-33 0-65-14t-58-33v126q33 10 62 17t64 7q33 0 66-7t61-23 43-42 17-67zm5-696q-1 15-1 30t0 29v238h130V544h-191q-16 68-33 135t-29 136q-3-10-4-19t-3-20l-58-229-1-3h-197v430h119V771q0-23-1-46t-2-46q13 75 34 148t40 147h126l63-257 4-20 4-20zm395 698q0-33-13-55t-32-38-42-26-42-20-32-17-13-21q0-15 15-20t28-6q31 0 56 9t53 23v-117q-26-11-59-14t-62-3q-33 0-64 8t-56 24-40 43-15 64q0 34 12 57t31 38 41 24 40 18 31 18 13 22q0 16-13 21t-27 5q-35 0-64-14t-58-33v126q11 6 27 10t34 8 35 4 29 1q34 0 67-6t60-23 43-43 17-67zm106-401V867h-137v-55h127V705h-127v-54h135V544h-270v430h272zM820 1187q7 35 16 70t19 71h-71q9-35 20-70t16-71zm-23-389h-71l36-141q8 36 17 71t18 70zm-415 374q24 0 39 11t16 38q0 25-13 36t-38 12h-25v-97h21z"></path></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__horizontal">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Eville</div>
+                </div>  
+            </div>
+
+        </div>
+    </section>
+
+    <section class="generi__section">
+        <div class="generi">
+            <h2 class="title">Generi</h2>
+            <div class="container">
+                <a href="#" class="indie" >INDIE<svg class="lamp" viewbox="0 0 40 40"><path d="M14.25 32c-.813 0-1.547-.23-2.203-.688a3.51 3.51 0 01-1.344-1.828l-.078-.28-1.875-7.829c-.042-.208-.156-.406-.344-.594-2.802-2.646-4.265-5.547-4.39-8.703L4 11.594v-.375c.073-2.052.651-3.933 1.734-5.64A11.919 11.919 0 0110.078 1.5C11.891.5 13.865 0 16 0c2.177 0 4.182.52 6.016 1.563 1.833 1.041 3.286 2.447 4.359 4.218C27.458 7.552 28 9.49 28 11.594c0 3.364-1.469 6.427-4.406 9.187a1.209 1.209 0 00-.297.438l-.047.156-1.875 7.828a3.48 3.48 0 01-1.203 1.938 3.63 3.63 0 01-2.14.843L17.75 32h-3.5zm-2.813-8H15v-9c0-.281.099-.516.297-.703A.961.961 0 0116 14c.27 0 .505.099.703.297A.929.929 0 0117 15v9h3.563l.78-3.234.11-.297c.177-.448.432-.828.766-1.14C24.739 16.942 26 14.364 26 11.593c0-1.73-.448-3.328-1.344-4.797a9.869 9.869 0 00-3.64-3.5C19.484 2.432 17.813 2 16 2c-1.73 0-3.333.396-4.813 1.188a10.004 10.004 0 00-3.593 3.187 8.994 8.994 0 00-1.563 4.453L6 11.25v.313l.016.437c.114 2.625 1.37 5.068 3.765 7.328.375.365.651.792.828 1.281l.094.297.735 3.094zM16 12a.988.988 0 01-1-1V9c0-.27.099-.505.297-.703A.961.961 0 0116 8c.27 0 .505.099.703.297A.961.961 0 0117 9v2a.988.988 0 01-1 1zm-5.703.297c-.198-.219-.297-.453-.297-.703 0-.271.099-.505.297-.703a.961.961 0 01.703-.297c.281 0 .516.099.703.297l1.422 1.406a.928.928 0 01.297.703.98.98 0 01-.297.719.961.961 0 01-.703.297c-.26 0-.5-.1-.719-.297l-1.406-1.422zm8.578 1.422a1.05 1.05 0 01-.297-.719c0-.27.1-.505.297-.703l1.406-1.406a.98.98 0 01.719-.297c.281 0 .516.099.703.297a.929.929 0 01.297.703c0 .27-.099.505-.297.703l-1.422 1.422a.96.96 0 01-.703.297c-.25 0-.484-.1-.703-.297zM17.891 30c.343-.031.646-.14.906-.328.27-.198.463-.443.578-.735l.063-.187.656-2.75h-8.188l.64 2.672.048.187c.104.302.286.558.547.766.26.198.552.318.875.36l.234.015h3.64z"></path></svg></a>
+                <a href="#" class="intuitivo">INTUITIVO PER LA FAMIGLIA<svg class="family" viewbox="5 0 30 30"><path d="M10 12c-1.08 0-2.09-.266-3.02-.797A6.133 6.133 0 014.8 9.016 5.978 5.978 0 014 6c0-1.083.27-2.083.8-3A5.973 5.973 0 016.98.812 5.906 5.906 0 0110 0c1.08 0 2.08.27 3 .813A5.78 5.78 0 0115.19 3c.54.917.81 1.917.81 3s-.27 2.089-.81 3.016A5.93 5.93 0 0113 11.203c-.92.531-1.92.797-3 .797zm0-2c.72 0 1.39-.177 2-.531.61-.365 1.1-.854 1.45-1.469.37-.615.55-1.281.55-2 0-.719-.18-1.385-.55-2A3.886 3.886 0 0012 2.547 3.836 3.836 0 0010 2c-.72 0-1.39.182-2 .547A4.09 4.09 0 006.53 4 3.978 3.978 0 006 6c0 .719.18 1.385.53 2A4.22 4.22 0 008 9.469c.61.354 1.28.531 2 .531zm14 4c-.64 0-1.23-.135-1.78-.406a4.01 4.01 0 01-1.39-1.156l-.06-.079a3.802 3.802 0 01-.58-1.093A4.123 4.123 0 0120 10c0-.719.18-1.385.53-2A4.09 4.09 0 0122 6.547 3.836 3.836 0 0124 6c.72 0 1.39.182 2 .547.61.354 1.1.838 1.45 1.453.37.615.55 1.281.55 2 0 .719-.18 1.385-.55 2A4.005 4.005 0 0126 13.469c-.61.354-1.28.531-2 .531zm0-2c.55 0 1.02-.193 1.41-.578.39-.396.59-.87.59-1.422 0-.552-.2-1.02-.59-1.406A1.908 1.908 0 0024 8c-.55 0-1.03.198-1.42.594-.39.385-.58.854-.58 1.406 0 .552.19 1.026.58 1.422.39.385.87.578 1.42.578zm-8 8c-.72 0-1.39-.177-2-.531A4.22 4.22 0 0112.53 18a3.978 3.978 0 01-.53-2 3.978 3.978 0 011.98-3.453A3.906 3.906 0 0116 12c.72 0 1.39.182 2 .547.61.354 1.1.838 1.45 1.453.37.615.55 1.281.55 2 0 .719-.18 1.385-.53 2a4.039 4.039 0 01-1.42 1.453c-.61.354-1.27.537-1.99.547H16zM6 25.375c-1.24-.417-2.31-1.01-3.22-1.781-.9-.771-1.6-1.64-2.08-2.61C.23 20.005 0 19.01 0 18v-1c0-.542.14-1.042.41-1.5.27-.458.63-.823 1.09-1.094.46-.27.96-.406 1.5-.406h7.34a6.001 6.001 0 00-.34 2H3c-.27 0-.51.099-.7.297-.2.198-.3.432-.3.703v1c0 .698.17 1.396.5 2.094.33.687.82 1.317 1.47 1.89.64.573 1.42 1.032 2.31 1.375C6.09 23.87 6 24.417 6 25v.375zM16.17 18c.52-.052.95-.266 1.3-.64.35-.386.53-.84.53-1.36 0-.552-.2-1.02-.59-1.406A1.907 1.907 0 0016 14c-.55 0-1.03.198-1.42.594-.39.385-.58.854-.58 1.406 0 .552.19 1.026.58 1.422.39.385.87.578 1.42.578h.17zm9.8 7.828c.02-.375.03-.65.03-.828 0-.417-.05-.818-.14-1.203.97-.209 1.79-.584 2.47-1.125C29.44 21.766 30 20.542 30 19c0-.27-.1-.505-.3-.703A.943.943 0 0029 18h-7.34c.23-.656.34-1.323.34-2h7c.54 0 1.04.135 1.5.406.46.271.82.636 1.09 1.094.27.458.41.958.41 1.5 0 1.094-.21 2.083-.64 2.969a6.427 6.427 0 01-1.78 2.265c-.98.782-2.18 1.313-3.61 1.594zM16 32c-1.07 0-2.09-.146-3.05-.438a7.711 7.711 0 01-2.53-1.328 6.439 6.439 0 01-1.61-1.906c-.4-.74-.66-1.562-.76-2.469A8.09 8.09 0 018 25c0-.385.07-.766.22-1.14A2.991 2.991 0 0111 22h10c.65 0 1.22.188 1.73.563.53.364.89.843 1.1 1.437.11.323.17.656.17 1 0 .375-.02.708-.06 1a6.744 6.744 0 01-.78 2.375 6.9 6.9 0 01-1.58 1.86 7.711 7.711 0 01-2.53 1.328c-.96.291-1.98.437-3.05.437zm0-2c.88 0 1.68-.115 2.41-.344.74-.229 1.38-.557 1.92-.984.9-.74 1.44-1.698 1.61-2.875.04-.219.06-.485.06-.797 0-.27-.1-.505-.3-.703A.943.943 0 0021 24H11c-.27 0-.51.099-.7.297-.2.198-.3.432-.3.703 0 .354.03.688.09 1 .19 1.073.72 1.963 1.58 2.672.54.427 1.18.755 1.91.984.74.23 1.54.344 2.42.344z" fill-rule="evenodd"></path></svg></a>
+                <a href="#" class="sparatutto">SPARATUTTO<svg class="pistol" aria-hidden="true"><path d="M15.423 23.002H15a2 2 0 01-2-2h3.295c.308.3.6.63.877.98.255.325.494.668.722 1.02h-2.471zm2.748-16c2.926-1.66 5.454-2.645 7.535-2.905.77-.097 1.26-.107 1.563-.087-.26.333-.662.74-.872.954a13.293 13.293 0 00-1.665 2.038H18.17zm7.787-4.89c1.602-.2 3.32-.252 3.889.9.595 1.204-.631 2.448-1.526 3.356l-.286.294c-.103.11-.186.228-.285.34-.334.382-.64.775-.907 1.184v.006A5.588 5.588 0 0129 12.602v2.8c0 .203-.013.403-.034.6a5.582 5.582 0 01-1.99 3.709v.01c.602.674 1.13 1.393 1.573 2.135.295.497.558 1 .789 1.5a19.567 19.567 0 011.553 5.239c.046.315.075.588.093.805.008.11.013.205.016.286 0 .493-.808.848-1.97 1.064-.257.048-.533.089-.821.123-.432.052-.892.088-1.363.108a21.507 21.507 0 01-1.432.016 17.954 17.954 0 01-2.26-.181c-1.371-.205-2.37-.582-2.37-1.13 0-1.12-.475-2.903-1.301-4.684H15a3.975 3.975 0 01-3-1.38 3.91 3.91 0 01-.445-.62 3.958 3.958 0 01-.555-2H9v-2h8.612l.583.572c.135.133.259.286.39.428a14.86 14.86 0 011.802 2.436 18.834 18.834 0 011.284 2.564c.538 1.313.905 2.61 1.047 3.713 1.41.367 4.635.38 6.179.04-.276-1.76-1.162-5.22-3.406-7.704L24.546 20l-.45-.498 1.603-1.331a3.584 3.584 0 001.235-2.17c.033-.197.066-.396.066-.6v-.4H15.8a.8.8 0 01-.8-.8v-.4a.8.8 0 01.8-.8H27v-.4a3.581 3.581 0 00-1.127-2.604 3.653 3.653 0 00-.83-.581 3.566 3.566 0 00-.937-.344 3.572 3.572 0 00-.705-.071H9v-2h5.84c4.41-2.894 8.07-4.508 11.118-4.89zM6.017 9.002c.069 0 .13.025.194.039A.97.97 0 017 9.985v8.034a.97.97 0 01-.79.944c-.063.014-.124.039-.193.039h-.034a.964.964 0 01-.607-.23A.965.965 0 015 18.02V9.985c0-.31.152-.574.376-.755a.969.969 0 01.607-.228zm-4 2c.543 0 .983.44.983.983v3.034c0 .543-.44.983-.983.983h-.033A.984.984 0 011 15.019v-3.034c0-.15.039-.288.099-.415a.978.978 0 01.885-.568z" fill-rule="evenodd"></path></svg></a>
+                <a href="#" class="action">AZIONE E AVVENTURA<svg width="40px" height="50px" viewBox="0 0 32 32" class="boat" aria-hidden="true"><path d="M30 18a1 1 0 01.993.883L31 19v4a1 1 0 01-.883.993L30 24l-1.001-.001.001 5.172a1 1 0 01-.444.83l-.107.063-.268.11c-.44.198-.797.552-1 .991l-.117.284a1 1 0 01-.768.543l-.125.008-1.718-.002L7.411 32a1 1 0 01-.368-.07l-.114-.054-.106-.067c-1.172-.852-2.062-1.804-2.713-2.857-.734-1.189-1.044-2.075-1.322-3.662l-.056-.326-.098-.633-.081-.553-.06-.371-.062-.312c-.141-.655-.3-.88-.6-.981l-.194-.06c-.97-.357-.788-1.818.24-1.926L2 20.122h5.71a1 1 0 01.896.555c.617 1.242 1.423 1.839 2.511 1.901l.195.006h.748l8.483.06.083-.03c1.763-.708 2.646-1.748 2.781-3.206l.014-.201.005-.207a1 1 0 01.883-.993l.117-.007H30zm-1 1.999h-3.653l-.047.258c-.383 1.832-1.639 3.22-3.68 4.108l-.27.113-.28.107a1 1 0 01-.234.055l-.12.006-3.123-.026-6.28-.036c-1.65 0-2.99-.726-3.956-2.1l-.15-.223-.086-.14h-2.88l.032.106c.08.285.148.604.21.96l.044.275.083.561.091.585.09.517c.226 1.217.48 1.9 1.02 2.776.456.737 1.068 1.42 1.876 2.054l.057.044L25.536 30l.083-.138c.272-.43.623-.803 1.033-1.1l.21-.143.138-.083V23a1 1 0 01.77-.974l.113-.02L28 22l1-.001v-2zM21 26a1 1 0 01.117 1.993L21 28h-1a1 1 0 01-.117-1.993L20 26h1zm-5 0a1 1 0 01.117 1.993L16 28h-1a1 1 0 01-.117-1.993L15 26h1zm-5 0a1 1 0 01.117 1.993L11 28h-1a1 1 0 01-.117-1.993L10 26h1zm5-25c.205 0 .395.062.554.167L23 3.117l-6 1.614V6h1.998a1 1 0 01.849 1.53l-.065.09c-.607.768-.677 3.247-.214 4.383l.43-.003c.856 0 1.3.993.778 1.629l-.077.084c-.818.804-.852 3.517-.11 4.453l.1.112c.652.623.21 1.722-.691 1.722h-8.249a1 1 0 01-.767-.36c-1.311-1.57-1.311-5.695-.003-7.277a1 1 0 01.237-.209c-.414-1.853-.238-4.507.525-5.695A1 1 0 0112.583 6h2.415L15 2a1 1 0 01.883-.993L16 1zm2.341 13h-6.027l-.03.07c-.38.992-.38 2.875-.003 3.861l.031.069h6.024l-.02-.06c-.343-1.198-.344-2.645-.003-3.85l.028-.09zm-.845-6H13.23l-.006.017c-.3 1.032-.3 2.941-.001 3.966l.006.017h4.265l-.034-.136a9.045 9.045 0 01-.003-3.699l.04-.165z" fill-rule="evenodd"></path></svg></a>
+                <a href="#" class="brawler">PICCHIADURO E BRAWLER<svg width= "20px" height="60px" viewBox="0 20 30 30" class="punch" aria-hidden="true"><path d="M20.237 26.964l6.158-6.158c.003.003.004.008.007.01l2.02 2.019-6.157 6.155-2.017-2.018c-.003-.003-.008-.005-.01-.008M4.15 15.65a4.296 4.296 0 01.012-6.053l5.423-5.423a4.293 4.293 0 013.055-1.266c1.154 0 2.24.45 3.055 1.266l2.746 2.746-3.774.275a.907.907 0 00-.179.03c-.664.179-1.137.677-1.33 1.4-.369 1.379.338 3.305 1.203 4.17.9.9 2.047 1.464 3.261 1.669l-3.543 3.542a.957.957 0 001.351 1.352l5.195-5.194a.932.932 0 00.356-1.038.929.929 0 00-.563-.592c-.035-.015-.07-.021-.107-.032a.99.99 0 00-.223-.044c-.065-.004-.126.007-.19.017-.045.006-.088-.002-.13.01a4.105 4.105 0 01-4.055-1.042c-.587-.586-.89-2.032-.739-2.354l7.763-.566a12.875 12.875 0 013.451 9.098l-.027 1.024a.938.938 0 00-.568.258l-7.383 7.383c-.03.03-.044.07-.07.105a17.024 17.024 0 01-5.906-2.602 1769.944 1769.944 0 01-8.084-8.14m26.31 6.522l-2.416-2.416.054-2.083A14.789 14.789 0 0023.79 6.86a.937.937 0 00-.745-.277l-2.083.152-3.914-3.914a6.241 6.241 0 00-8.814 0L2.811 8.245c-2.409 2.408-2.416 6.334-.017 8.75 2.853 2.89 5.57 5.626 8.15 8.205a.99.99 0 00.125.107 18.985 18.985 0 008.05 3.239l2.381 2.382c.015.015.037.02.053.036.015.017.021.038.037.054a.954.954 0 001.351 0l7.384-7.384c.012-.011.015-.026.025-.038.035-.027.078-.041.111-.073a.957.957 0 000-1.352"></path></svg></a>
+                <a href="#" class="strategy">STRATEGIA<svg width="40px" height="40px" viewBox="0 0 32 32" class="scacchi" aria-hidden="true"><path d="M10 0a4 4 0 012.646 7h.982a2 2 0 011.991 2.19l-.02.148-.514 3c-.089.517-.371.96-.766 1.258a1.993 1.993 0 01.003.796l-.123.607L15 15v2h-1.2l1.722 8.608c.026.131.039.262.039.392H16a2 2 0 012 1.988V28a2 2 0 011.216-1.84 2.128 2.128 0 01.004-.359l.579-5.802L19 20v-2h1.535a4 4 0 116.93 0H29v2l-.8-.001.58 5.802c.012.121.013.241.004.358A2 2 0 0130 28v2a2 2 0 01-2 2h-8a2 2 0 01-2-1.988V30a2 2 0 01-2 2H4a2 2 0 01-2-2v-2a2 2 0 012-2h.44a2 2 0 01.038-.392L6.2 17H5v-2l.799-.001-.12-.607a1.994 1.994 0 01.002-.797 1.993 1.993 0 01-.73-1.087l-.036-.17-.514-3a2 2 0 011.822-2.333L6.372 7h.982A4 4 0 0110 0zm6 28H4v2h12v-2zm12 0h-8v2h8v-2zM11.76 17H8.24l-1.8 9h7.12l-1.8-9zm14.43 3h-4.38l-.6 6h5.58l-.6-6zM24 14a2 2 0 100 4 2 2 0 000-4zM13.628 8.998H6.445L6.372 9l.498 2.916.016.083 1.01.762L7.64 14l.199.999h4.321l.2-.999-.256-1.237 1.01-.763.514-3.002zM10 2a2 2 0 100 4 2 2 0 000-4z" fill-rule="evenodd"></path></svg></a>
+                <a href="#" class="simulator">SIMULATORI<svg width="40px" height="40px" viewBox="0 0 32 32" class="goat" aria-hidden="true"><path d="M11.909 1c.375 0 .74.043 1.09.124-1.484.343-1.79 1.371-1.834 2.741l-.007.365.006.573c0 .066.002.131.004.198L14.034 5c.876 0 1.312 1.034.75 1.661l-.078.08-1.559 1.413L15.78 12h6.338V9a1 1 0 01.74-.966l.11-.023.113-.01c3.24-.121 4.89 2.398 4.97 7.016-.012.678-.088 1.144-.28 1.874l-.168.624c-.201.784-.258 1.288-.19 2.064l.032.305.045.344.058.385.073.425.135.715.167.806.128.587.219.958.25 1.049.486 1.948.574 2.199.385 1.439a1 1 0 01-.85 1.255L29 32h-3.915a1 1 0 01-.912-.588l-.042-.11-1.435-4.526-.173-.075a3.893 3.893 0 01-1.333-1.028l-.152-.193-.142-.205c-.332-.511-.584-1.139-.764-1.885l-.072-.327-.013-.063h-3.99l-1.81 8.215a1 1 0 01-.737.756l-.123.022-.116.007h-2.95a1 1 0 01-.993-.883L9.322 31l-.001-8.643-.217-.267-.593-.739-.504-.646-.416-.553-.229-.319-.19-.278c-.453-.686-.705-1.486-.809-2.398a9.524 9.524 0 01-.054-1.353l.01-.308.025-.496H4.999L5 19c-1.582 0-2.877-.816-2.992-1.85L2 17l-.001-3.628C.789 12.088.61 10.71 1.697 9.37 2.81 8 4.531 6.6 6.861 5.15a1 1 0 01.228-.104C7.526 2.741 9.518 1 11.91 1zm-.466 6H7.677l-.157.1c-1.692 1.082-2.988 2.114-3.884 3.086l-.2.223-.186.221c-.484.597-.258 1.23 1.138 2.158l.181.117.152.095h2.668a1 1 0 01.97.755l.021.111.009.115.001.17-.004.182-.067 1.214c-.024.56-.016.964.031 1.384.07.622.23 1.127.49 1.521l.081.12.192.272.362.488.45.583.54.678.63.772a1 1 0 01.217.497l.01.138-.001 8h1.146l1.81-8.215a1 1 0 01.738-.756l.123-.022.116-.007H20.9a1 1 0 01.993.88c.127 1.048.362 1.818.68 2.306.276.426.66.702 1.194.85a1 1 0 01.64.545l.045.117L25.816 30h1.88l-.178-.672-.46-1.77-.307-1.223-.361-1.49-.306-1.329-.191-.892-.11-.546-.14-.743-.076-.446-.061-.406-.048-.367c-.145-1.25-.075-2.002.215-3.125l.211-.794c.117-.47.16-.775.167-1.18-.048-2.782-.636-4.3-1.758-4.816l-.127-.053-.048-.016V13a1 1 0 01-.77.974l-.113.02-.117.006h-7.864a1 1 0 01-.75-.338l-.075-.097-3.423-5a1 1 0 01.067-1.217l.086-.088.284-.26z" fill-rule="evenodd"></path></svg></a>
+                <a href="#" class="rpg">GIOCHI DI RUOLO (RPG)<svg width="50px" height="50px" viewBox="0 0 32 32" class="sword" aria-hidden="true"><path d="M8.59.656a1 1 0 01.705.291l16.374 16.295 1.402-1.401a1 1 0 011.32-.084l.094.084a1 1 0 01.084 1.32l-.084.094-2.9 2.9 5.029 5.029a1 1 0 010 1.414l-4.242 4.242a1 1 0 01-1.414 0l-5.03-5.029-2.756 2.757a1 1 0 01-1.32.084l-.094-.084a1 1 0 01-.084-1.32l.084-.094 1.476-1.477L.947 9.487a1 1 0 01-.295-.709l.003-7.12a1 1 0 011-1L8.588.657zM24.192 21.59l-2.829 2.829 4.301 4.3 2.827-2.829-4.3-4.3zM8.177 2.655l-5.521.003-.004 5.704 15.99 15.895 2.073-2.073-10.113-10.112-.083-.095a1 1 0 011.403-1.403l.094.083L22.13 20.77l2.12-2.12L8.177 2.655z" fill-rule="evenodd"></path></svg></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="all-games-section">
+        <h2 class="section-title">Tutti i giochi</h2>
+
+        <div class="all-games-section__card-container">
+            <div class="square-card">
+                <img src="assets/7days-img.jpg" class="square-card__poster">
+
+                <div class="pad__black-box__square"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">7 Days to Die</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/aplaguetail-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">A Plague Tale: Requiem</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/ashorthike-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">A Short Hike</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/aoeII-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Age of Empires II: Definitive Edition</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/aoeIV-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Age of Empires IV: Anniversary Edition</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/airborne-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Airborne Kingdom</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/amensiacoll-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Amnesia: Collection</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/amnesiareb-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Amnesia: Rebirth</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/amnesiathebunker-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Amnesia: The Bunker</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/amongus-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Among Us</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/anvil-img.jpg" class="square-card__poster">
+
+                <div class="pad__black-box__square"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">ANVIL: Vault Breaker (Game Preview)</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/arcadeparadise-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Arcade Paradise</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/ark-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">ARK: Ultimate Survivor Edition</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/asduskfalls-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">As Dusk Falls</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/acodissey-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Assassin's Creed® Odyssey</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/7days-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Assassin's Creed® Origins</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/airborne-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">ASTRONEER</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/amnesiathebunker-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Atomic Heart</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/anvil-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Back 4 Blood</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/aoeII-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Banjo Kazooie: N n B</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/aplaguetail-img.jpg" class="square-card__poster">
+
+                <div class="pad__black-box__square"></div>
+
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Banjo-Kazooie</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/amnesiareb-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Banjo-Tooie</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/amongus-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Batman™: Arkham Knight</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/ashorthike-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Battlefield 4</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/asduskfalls-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Battlefield™ 1 Revolution</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/acodissey-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Battlefield™ 2042 Xbox Series X|S</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/7days-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Battlefield™ V</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/airborne-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Battletoads</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/amnesiareb-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Ben 10: Power Trip</div>
+                </div>
+            </div>
+
+            <div class="square-card">
+                <img src="assets/amnesiathebunker-img.jpg" class="square-card__poster">
+    
+                <div class="pad__black-box__square"></div>
+    
+                <div class="icons__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 2048 2048" width="20px" height="20px" class="pad-icon__square">
+                    <path fill="#FFFFFF" d="M1024 640q26 0 45 19t19 45q0 26-19 45t-45 19q-26 0-45-19t-19-45q0-26 19-45t45-19zm704-164q20 14 36 35t25 45l224 607q20 55 27 121t8 124q0 55-17 111t-49 103-80 76-110 30q-22 0-48-8t-43-24l-304-304q-12-12-30-21t-40-15-42-9-37-3H800q-17 0-37 3t-42 9-39 15-31 21l-304 304q-16 16-42 24t-49 8q-62 0-109-29t-80-76-50-103-17-112q0-61 7-124t28-121l1-1 225-609v-2q9-22 24-41t35-34v-66q44-23 85-40t84-28 88-16 95-6q34 0 61 10t49 22 42 22 40 10h320q19 0 39-10t42-22 50-22 61-10q50 0 95 5t87 17 84 28 86 40v66zm64 1124q33 0 57-20t40-49 23-62 8-61q0-49-6-102t-22-101q-32-93-66-184t-70-184l-61-167q-7-17-12-35t-14-35q-5-10-12-17-11-11-27-17t-30-12v-66q-53-22-110-31t-114-9q-20 0-39 10t-42 22-50 22-61 10H864q-34 0-61-10t-49-22-43-22-39-10q-57 0-114 9t-110 31v66q-8 4-18 8t-21 9-18 12-12 17l-223 605q-16 44-22 100t-6 103q0 27 7 60t23 63 40 49 58 20q5 0 7-1l302-303q20-20 49-35t61-25 65-15 60-5h448q27 0 59 5t65 15 62 25 49 35l302 303q2 1 7 1z"></path></svg>
+                </div>
+    
+                <div class="card__popup-bar">
+                    <div class="popup-bar__name">Besiege Console</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="visualize__all-games">
+        <button class="visualize__all-games__button">VISUALIZZA TUTTI I GIOCHI</button>
+    </div>
+
+    <footer>
+        <div class="footer__block">
+            <div class="footer__links">
+                <ul>
+                    <li class="footer__links__titleLink">Esplora</li>
+                    <li>Xbox console</li>
+                    <li>Gioghi per Xbox</li>
+                    <li>Xbox Game Pass</li>
+                    <li>Accessori per Xbox</li>
+                </ul>
+            </div>
+        
+            <div class="footer__links">
+                <ul id="resources__column">
+                    <li class="footer__links__titleLink">Risorse</li>
+                    <li>Supporto Xbox</li>
+                    <li>Commenti e suggerimenti</li>
+                    <li>Standard della community</li>
+                    <li>Avviso fotosensibilità</li>
+                </ul>
+            </div>
+        
+            <div class="footer__links">
+                <ul>
+                    <li class="footer__links__titleLink">Microsoft Store</li>
+                    <li>Account Microsoft</li>
+                    <li>Supporto Microsoft Store</li>
+                    <li>Resi</li>
+                    <li>Tracciamento ordini</li>
+                </ul>
+            </div>
+        
+            <div class="footer__links">
+                <ul id="developers__column">
+                    <li class="footer__links__titleLink">Per sviluppatori</li>
+                    <li>Giochi</li>
+                    <li>ID@Xbox</li>
+                    <li>Windows</li>
+                    <li>Creators Program</li>
+                </ul>
+            </div>
+        
+            <div id="footer__choices">
+                <ul>
+                    <img src="icons/logo-ita.png" alt="ita-language" id="footer__choices__logoIta" width="25" height="25">
+                    <li>Italiano (Italia)</li>
+                    <img src="icons/logo-privacy.png" alt="privacy-switch" id="footer__choices__logoPrivacy" width="32"
+                        height="16">
+                    <li>Le tue scelte sulla privacy</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer__informations">
+            <ul>
+                <li>Riferimenti societari</li>
+                <li>Contatta Microsoft</li>
+                <li>Privacy e cookie</li>
+                <li>Gestisci i cookie</li>
+                <li>Condizioni per l'utilizzo</li>
+                <li>Marchi</li>
+                <li>Comunicazioni di terze parti</li>
+                <li>Informazioni sulle inserzioni</li>
+                <li>EU Compliance DoCs</li>
+                <li>Accessibilità</li>
+                <li>© Microsoft 2023</li>
+            </ul>
+        </div>
+    
+    </footer>
 </body>
 </html>

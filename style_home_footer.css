@@ -1,0 +1,226 @@
+footer {
+    background-color: #000000;
+    color: rgb(244, 238, 238);
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    margin-left: -1.5rem;
+    font-size: 0.7rem;
+    font-weight: 200;
+    width: 100.9%;
+}
+
+.footer__block {
+    margin-left: 16%;
+}
+
+.footer__links {
+    display: inline-block;
+    justify-content: right;
+}
+
+
+.footer__links ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 7.5rem;
+    margin-top: 0.5rem;
+
+}
+
+
+.footer__links ul li {
+    margin-bottom: 13px;
+
+}
+
+#resources__column {
+    margin-left: 9.5rem;
+}
+
+.footer__links__titleLink {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#footer__choices ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 9rem;
+    margin-top: 2rem;
+}
+
+
+#footer__choices ul li {
+    display: flex;
+    margin-right: 3rem;
+}
+
+#footer__choices__logoIta {
+    display: flex;
+    margin-left: -1rem;
+    margin-right: 1rem;
+    margin-top: -0.5rem;
+}
+
+#footer__choices__logoPrivacy {
+    display: flex;
+    margin-left: -1rem;
+    margin-right: 1rem;
+    margin-top: -0.2rem;
+
+}
+
+
+.footer__informations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12rem;
+}
+
+
+.footer__informations ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 5rem;
+    margin-top: 0.8rem;
+
+}
+
+
+.footer__informations ul li {
+    margin-right: 1.5rem;
+    text-align: right;
+
+}
+
+
+@media screen and (max-width: 1400px) {
+
+    .footer__informations,
+    .footer__informations ul {
+        margin-left: 3rem;
+
+    }
+}
+
+
+@media screen and (max-width: 1268px) {
+
+    .footer__informations,
+    .footer__informations ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: flex-start;
+
+        margin-left: 3.7rem;
+
+    }
+
+}
+
+
+@media screen and (max-width: 730px) {
+    #resources__column {
+        margin-left: 7rem;
+
+    }
+
+}
+
+
+@media screen and (max-width: 686px) {
+    #developers__column {
+        margin-left: 5.7rem;
+
+    }
+
+}
+
+
+@media (max-width: 585px) {
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #resources__column {
+        margin-left: 7.5rem;
+
+    }
+
+
+    #developers__column {
+        margin-left: 7.5rem;
+
+    }
+
+
+    #footer__choices ul {
+        flex-direction: column;
+        margin-left: 7.5rem;
+
+    }
+
+    #footer__choices ul li {
+        display: block;
+        margin-bottom: 1.5rem;
+        margin-top: 0.6rem;
+
+    }
+
+    .footer__informations,
+    .footer__informations ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+
+
+    }
+
+
+
+    #footer__choices__logoIta,
+    #footer__choices__logoPrivacy {
+        display: block;
+        margin-left: -0.2rem;
+
+
+    }
+}
+
+@media (max-width: 460px) {
+
+    .footer__links {
+        margin-left: -4rem;
+
+    }
+
+    .footer__informations {
+        margin-left: -0.4rem;
+    }
+
+
+    #footer__choices__logoIta,
+    #footer__choices__logoPrivacy {
+
+        margin-left: -4rem;
+        margin-top: 0;
+
+    }
+
+    #footer__choices ul li {
+        margin-left: -4rem;
+    }
+
+}
