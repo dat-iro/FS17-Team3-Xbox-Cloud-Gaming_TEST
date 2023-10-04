@@ -1,0 +1,337 @@
+header {
+    background-color: #1A1B1E;
+    height: 30rem;
+    justify-content: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), #1A1B1E), url(images/img1.jpeg);
+
+}
+
+
+#navHeader ul {
+    list-style: none;
+    height: 4.5rem;
+    display: flex;
+    align-items: baseline;
+}
+
+#navHeader ul li {
+    display: inline block;
+    margin-right: 1.5rem;
+
+}
+
+ul li img[title=navHeader__cloud-img] {
+    display: flex;
+    position: relative;
+    margin-bottom: 4.3rem;
+    left: 1.6rem;
+    cursor: pointer;
+}
+
+ul li img[title=navHeader__cloud-write] {
+    display: flex;
+    position: relative;
+    margin-bottom: 4.4rem;
+    margin-top: 1.2rem;
+    left: 1.6rem;
+    cursor: pointer;
+}
+
+
+ul li img[title=navHeader__cloud-img],
+ul li img[title=navHeader__cloud-write] {
+    display: block;
+    padding: 0.2rem;
+    transition: background-color 0.3s ease;
+    border-radius: 1.5rem;
+}
+
+
+ul li img[title=navHeader__cloud-write] {
+    border-radius: 0.5rem;
+
+}
+
+
+ul li img[title=navHeader__cloud-img]:hover {
+    background-color: rgb(94, 94, 94);
+    border-radius: 2rem;
+
+}
+
+
+ul li img[title=navHeader__cloud-write]:hover {
+    background-color: rgb(94, 94, 94);
+    border-radius: 0.5rem;
+
+}
+
+
+#navHeader__button {
+    display: flex;
+    position: relative;
+    bottom: 5.4rem;
+    left: 36rem;
+    background-color: #008947;
+    color: white;
+    font-size: 11px;
+    font-weight: bolder;
+    width: 12.5rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.23rem;
+    cursor: pointer;
+}
+
+#navHeader__button:hover {
+    filter: brightness(1.23);
+}
+
+ul li #navHeader__search {
+    display: flex;
+    position: relative;
+    width: 14.3rem;
+    height: 2rem;
+    bottom: 5.3rem;
+    left: 36rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.78rem;
+    font-weight: bolder;
+    padding-left: 2.3rem;
+    background-image: url(icons/glass.png);
+    background-position: 0.7rem center;
+    background-repeat: no-repeat;
+    background-size: 0.8rem;
+}
+
+
+ul li #navHeader__avatar {
+    display: flex;
+    position: relative;
+    margin-left: 36rem;
+    bottom: 4.5rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 2.2rem;
+    border: 1px solid black;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+ul li #navHeader__avatar .profileImg {
+    width: 2.2rem;
+    height: 2.2rem;
+
+}
+
+
+ul li #navHeader__avatar:hover .profileImg {
+    filter: brightness(1.4);
+
+}
+
+
+.scrollBar__cardsHeader {
+    overflow-x: auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+#cardsHeader {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-left: 3.7rem;
+    gap: 1rem;
+    margin-bottom: 0;
+}
+
+
+#cardsHeader .cardsHeader__games p {
+    display: flex;
+    position: relative;
+    left: 0.2rem;
+    bottom: 9.5rem;
+    margin: 0.7rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.cardsHeader__games__nameGame {
+    display: flex;
+    position: relative;
+    font-size: 2.1rem;
+    font-weight: bold;
+
+}
+
+.cardsHeader__games__description {
+    display: flex;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.cardsHeader__games .cardsHeader__games__nameGame .cardsHeader__games__description {
+    margin-top: 4rem;
+}
+
+
+#cardsHeader .cardsHeader__games .cardsHeader__games__covergame {
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: #1A1B1E;
+}
+
+#cardsHeader .cardsHeader__games .cardsHeader__games__gamepass {
+    display: flex;
+    position: relative;
+    bottom: 7.3rem;
+    left: 0.8rem;
+}
+
+#cardsHeader .cardsHeader__games .cardsHeader__games__controller {
+    display: flex;
+    position: relative;
+    bottom: 3.4rem;
+    left: 40.46rem;
+
+}
+
+.cardsHeader__games {
+    height: 378px;
+}
+
+.cardsHeader__games:hover {
+    filter: brightness(1.7);
+    cursor: pointer;
+}
+
+
+
+#cardsHeader .cardsHeader__games [title="Plants-vs-Zombies"] {
+    margin-right: 3rem;
+}
+
+
+
+
+@media screen and (max-width: 1380px) {
+    #navHeader__button {
+        left: 9rem;
+
+    }
+
+    ul li #navHeader__search {
+        left: 9rem;
+
+    }
+
+    ul li #navHeader__avatar {
+        margin-left: 10rem;
+
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 1220px) {
+
+
+    #navHeader__button {
+        left: 5rem;
+
+    }
+
+    ul li #navHeader__search {
+        left: 5rem;
+
+    }
+
+    ul li #navHeader__avatar {
+        margin-left: 6rem;
+
+    }
+
+}
+
+@media screen and (max-width: 1130px) {
+
+
+    #navHeader__button {
+        left: 2.5rem;
+
+    }
+
+    ul li #navHeader__search {
+        left: 2.5rem;
+
+    }
+
+    ul li #navHeader__avatar {
+        margin-left: 3rem;
+
+    }
+
+}
+
+@media screen and (max-width: 1070px) {
+
+    #navHeader__button {
+        display: none
+    }
+
+
+    ul li #navHeader__search {
+        left: 0rem;
+
+    }
+
+    ul li #navHeader__avatar {
+        margin-left: 1rem;
+
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+    ul li #navHeader__search {
+        display: none;
+
+    }
+
+
+    ul li #navHeader__avatar {
+        margin-left: 3.5rem;
+
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    ul li #navHeader__avatar {
+        margin-left: 3%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    ul li #navHeader__avatar {
+        display: none;
+    }
+}
